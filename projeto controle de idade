@@ -1,0 +1,26 @@
+void main() {
+  int idade = 18;
+  double altura = 1.51;
+  String mensagemSucessoIdade = 'Cliente aprovado! Boa diversão! :-)';
+  String mensagemReprovadoAltura = 'Cliente não aprovado, Esse brinquedo é restrito para pessoas com altura maior que 1.5m';
+  String mensagemReprovadoMenorIdade = 'Cliente não aprovado, Esse brinquedo é restrito para maiores de idade';
+  String mensagemReprovadoIdoso = 'Cliente não aprovado, Esse brinquedo não é recomendado para idosos.';
+  
+  if (idade >=18 && altura>1.5){
+    print(mensagemSucessoIdade);
+    
+  }
+  
+  if(idade<18){
+    print(mensagemReprovadoMenorIdade);
+  }
+  
+  if(altura<=1.5){
+    print(mensagemReprovadoAltura);
+  }
+  
+  if(idade>60){
+    print(mensagemReprovadoIdoso);
+  }
+  
+}
